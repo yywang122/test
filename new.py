@@ -4,7 +4,7 @@ import pytesseract
 import re
 import csv
 import os
-
+'''
 # 定義提取文本的函數
 def extract_text(image_path, num_contours):
     # 讀取圖片
@@ -62,4 +62,4 @@ for subdir, _, _ in sorted(os.walk(main_directory)):
             writer.writerow(['Image Name', '[1]', '[2]', '[3]' if 'IQC' in subdir else '[3]', '[4]', '[5]'])  # 寫入列標題
             writer.writerows(extracted_texts_list)
 
-        print(f'Processed {subdir} and saved extracted texts to {csv_file_path}')
+        print(f'Processed {subdir} and saved extracted texts to {csv_file_path}')'''
